@@ -3,5 +3,8 @@ package sample.telas;
 /**
  * Created by juliosossai on 20/11/2014.
  */
-public class EstadoTela {
+public enum  EstadoTela {
+
+    INSERINDO, EDITANDO;
+
 }

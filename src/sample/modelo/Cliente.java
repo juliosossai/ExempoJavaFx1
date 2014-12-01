@@ -7,16 +7,16 @@ import java.io.Serializable;
  */
 public class Cliente implements Serializable {
 
-    private Integer idCli;
+    private String idCli;
     private String nomeCli;
     private String cnpjCli;
     private String emailCli;
 
-    public Integer getIdCli() {
+    public String getIdCli() {
         return idCli;
     }
 
-    public void setIdCli(Integer idCli) {
+    public void setIdCli(String idCli) {
         this.idCli = idCli;
     }
 
@@ -71,14 +71,14 @@ public class Cliente implements Serializable {
     @Override
     public String toString() {
         return "Cliente{" +
-                "idCli=" + idCli +
+                "idCli='" + idCli + '\'' +
                 ", nomeCli='" + nomeCli + '\'' +
                 ", cnpjCli='" + cnpjCli + '\'' +
                 ", emailCli='" + emailCli + '\'' +
                 '}';
     }
 
-    public Cliente(Integer idCli, String nomeCli, String cnpjCli, String emailCli){
+    public Cliente(String idCli, String nomeCli, String cnpjCli, String emailCli){
 
         this.idCli = idCli;
         this.nomeCli = nomeCli;
