@@ -27,7 +27,6 @@ public class Main extends Application {
 
         BancoDeDados b = BancoDeDados.getInstance();
 
-
     }
 
 }
